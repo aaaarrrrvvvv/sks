@@ -1,0 +1,38 @@
+.audio {
+  background: $color-grey-light;
+  border: 1px solid $color-border;
+  padding: 2em;
+  width: calc(100% - #{$article-padding} * 2);
+  margin: 2em auto;
+  position: relative;
+  overflow: hidden;
+  font-size: 1.2em;
+
+  @media screen and (max-width: $break-mobile) {
+    width: calc(100% - #{$article-padding / 2} * 2);
+    padding: 1.2em 1.2em 2em;
+    font-size: 1em;
+  }
+
+  .flex {
+    margin-bottom: 2em;
+    position: relative;
+    z-index: 2;
+  }
+
+  .info {
+    margin-left: 1em;
+    p {
+      font-weight: 500;
+      margin: 0 !important;
+    }
+  }
+
+  .waveform {
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    bottom: -64px;
+    left: 0;
+  }
+}

@@ -1,0 +1,172 @@
+$syntax-color-blue: #0000f5;
+$syntax-color-dark-blue: #0a167f;
+$syntax-color-light-blue: #2f6ebb;
+$syntax-color-brown: #755f30;
+$syntax-color-red: #95261f;
+$syntax-color-pink: #a020d3;
+$syntax-color-green: #3c845c;
+$syntax-color-red-light: #d22d1f;
+
+code {
+  background-color: $color-grey;
+  border-radius: $border-radius-normal;
+  padding: 0.2em;
+  font-size: 0.85em;
+}
+.highlight pre {
+  background-color: $color-grey;
+  width: 100%;
+  overflow: auto;
+  max-height: 450px;
+  display: block;
+  padding: 2em;
+  border-radius: 0 0 $border-radius-normal $border-radius-normal;
+  margin: 0;
+}
+em.code-caption {
+  position: relative;
+  top: 1.7rem;
+  background-color: $color-border;
+  border-radius: $border-radius-normal $border-radius-normal 0 0;
+  font-size: 0.7em;
+  font-style: normal;
+  font-family: monospace;
+  text-align: left;
+  color: $color-ink-muted;
+  padding: 0 1em;
+}
+.highlight .hll {
+  background-color: #ffffcc;
+}
+
+/* Comments */
+.highlight .c,
+.highlight .cm,
+.highlight .c1,
+.highlight .cs,
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #008000;
+}
+
+/* Errors */
+.highlight .err,
+.token.deleted {
+  border: 1px solid #ff0000;
+}
+
+/* Keywords */
+.highlight .k,
+.highlight .kc,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.token.keyword,
+.token.atrule,
+.token.rule {
+  color: $syntax-color-pink;
+}
+
+/* Declarations & Types */
+.highlight .kd,
+.token.selector,
+.token.important {
+  color: $syntax-color-blue;
+}
+
+.highlight .kt,
+.highlight .nc,
+.token.class-name {
+  color: #2b91af;
+}
+
+/* Strings & Literals */
+.highlight .s,
+.highlight .sb,
+.highlight .sc,
+.highlight .sd,
+.highlight .s2,
+.highlight .se,
+.highlight .sh,
+.highlight .si,
+.highlight .sx,
+.highlight .sr,
+.highlight .s1,
+.highlight .ss,
+.token.string,
+.token.char,
+.token.attr-value,
+.token.regex,
+.token.variable {
+  color: $syntax-color-red;
+}
+
+/* Functions & Methods */
+.highlight .nf,
+.token.function {
+  color: $syntax-color-brown;
+}
+
+/* Numbers */
+.highlight .m,
+.token.number,
+.token.boolean {
+  color: $syntax-color-green;
+}
+
+/* Punctuation & Operators */
+.highlight .p,
+.token.punctuation {
+  color: $syntax-color-blue;
+}
+
+.highlight .ow,
+.token.operator,
+.token.entity,
+.token.url {
+  color: #0000ff;
+}
+
+/* Names / Identifiers */
+.highlight .n,
+.highlight .nx {
+  color: $syntax-color-dark-blue;
+}
+
+.highlight .na,
+.token.attr-name {
+  color: $syntax-color-brown;
+}
+
+.highlight .nb,
+.highlight .nv {
+  color: $syntax-color-light-blue;
+}
+
+.highlight .nl {
+  color: $syntax-color-red-light;
+}
+
+.highlight .nt,
+.token.tag {
+  color: $syntax-color-red;
+}
+
+/* Preprocessor */
+.highlight .cp {
+  color: #0000ff;
+}
+
+/* Generic Styles */
+.highlight .ge {
+  font-style: italic;
+}
+
+.highlight .gh,
+.highlight .gp,
+.highlight .gs,
+.highlight .gu {
+  font-weight: bold;
+}
